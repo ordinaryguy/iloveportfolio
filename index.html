@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="div1">
+            <h2> Welcome!</h2>    
+        </div>
+        <div class="div2">
+            <div class="eyes">
+                <div class="eye">
+                  <div class="ball"></div>
+                </div>
+              </div>
+        </div>
+        <div class="div3">
+            <nav>
+                <ul>
+                  <li class="dropdown">Menu
+                    <ul>
+                      <li><a href="#first-section"> About</a></li>
+                      <li><a href="#second-section"> Achievement</a></li>
+                      <li><a href="#third-section"> Art Work and Hobbies</a></li>
+                      <li><a href="#fourth-section"> Project</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
+        </div>
+    </div>
+    <div class="first-section" id="first-section">
+        <h1 class="name"> About</h1>
+    </div>
+    <div class="second-section" id="second-section">
+        <h1 class="name2"> Achievement</h1>
+    </div>
+    <div class="third-section" id="third-section">
+        <h1 class="name3"> Art Work and Hobbies</h1>
+    </div>
+    <div class="fourth-section" id="fourth-section">
+        <h1 class="name4"> Project</h1>
+    </div>
+    <div class="fourth-section" id="fourth-section">
+      <h1 class="name4"> Project</h1>
+  </div>
+  <div class="fourth-section" id="fourth-section">
+    <h1 class="name4"> Project</h1>
+</div>
+
+
+
+
+</body>
+
+<script>
+    var balls = document.getElementsByClassName("ball");
+   document.onmousemove = function(){
+     var x = event.clientX * 100 / window.innerWidth + "%";
+     var y = event.clientY * 100 / window.innerHeight + "%";
+   
+   
+     for(var i=0;i<5;i++){
+       balls[i].style.left = x;
+       balls[i].style.top = y;
+       balls[i].style.transform = "translate(-"+x+",-"+y+")";
+     }}
+</script>
+
+</html>
