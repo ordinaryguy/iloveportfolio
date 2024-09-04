@@ -196,4 +196,50 @@ body{
     width: 70%;
     padding-top: 80%;
   }
+
+  .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    transform: translateX(-10%) translateY(-50%);
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  transform: translate(110%, -5%);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 80px;
+  font-size:16px;
+  line-height: 50px;
+  background: #5e17e9;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+} 
+
+a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+ul .dropdown li {
+  transform: translate(0%,-11%);
+  background: #5e17e9;
+  color: #ffffff;
+  height: 50px;
+  width: 80px;
+  font-size: 11px;
+  display: none;
+}
+
+.welcome{
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 16px;
+  padding-top: 10px;
+  transform: translateX(15%);
+}
 }
