@@ -6,22 +6,20 @@
     height: 0;
     }
 
-
-          
-
 body{
     background-color: palegoldenrod;
 }
 
 .welcome{
   font-family: "Pixelify Sans", sans-serif;
-
 }
 
 .profile-text{
   padding-left:50px;
   font-family: "Pixelify Sans", sans-serif;
   font-size: 26px;
+  margin-right: 45%;
+  padding-top: 10%;
 }
 .nav-bar {
     display: grid;
@@ -57,30 +55,6 @@ body{
     height:90vh;
 
 }
-
-.column-title1{
-  padding-top: 100px;
-  padding-bottom: 50px;
-  transform: translateX(50%);
-}
-
-.column-title2{
-  padding-bottom: 50px;
-  transform: translateX(80%);
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 .second-section{
     width: 100%;
@@ -208,4 +182,18 @@ body{
   ul:hover .dropdown li:nth-child(3) {
      animation: animate 600ms ease-in-out;
   }
-  
+
+@media (max-width: 375px) {
+  img{
+    width: 100% !important;
+    height: 30vh !important;
+    transform: translateX(0%) translateY(10%)!important;
+  }
+
+  .profile-text{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    width: 70%;
+    padding-top: 80%;
+  }
+}
