@@ -204,6 +204,11 @@ body{
     transform: translateX(0%) translateY(10%)!important;
   }
 
+  .first-section{
+    width: 100%;
+    height:120vh;
+}
+
   .profile-text{
     font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
