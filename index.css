@@ -14,6 +14,19 @@ body{
   font-family: "Pixelify Sans", sans-serif;
 }
 
+.social-icons {
+  margin-bottom: 50px !important;
+}
+
+ .icon1,.icon2,.icon3{
+  background-color: lightpink;
+  border-radius: 10px;
+  width: 30px;
+  padding-right:10px;
+}
+
+
+
 .profile-text{
   padding-left:50px;
   font-family: "Pixelify Sans", sans-serif;
@@ -74,11 +87,12 @@ body{
 }
 
 .first-section img{
-  transform: translateX(170%) translateY(25%);
+  transform: translateX(170%) translateY(35%);
   position: absolute;
   height: 50%;
   width: 35%;
   object-fit: cover;
+  border-radius: 10%;
 }
 
 .name3{
@@ -183,7 +197,7 @@ body{
      animation: animate 600ms ease-in-out;
   }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   img{
     width: 100% !important;
     height: 30vh !important;
