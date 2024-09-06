@@ -18,11 +18,23 @@ body{
   margin-bottom: 50px !important;
 }
 
- .icon1,.icon2,.icon3{
+ .icon2{
   background-color: lightpink;
   border-radius: 10px;
   width: 30px;
   padding-right:10px;
+}
+.icon1{
+  background-color: lightpink;
+  border-radius: 10px;
+  width: 30px;
+  padding-right:5px;
+}
+.icon3
+{  background-color: lightpink;
+  border-radius: 10px;
+  width: 30px;
+  padding-right:7px;
 }
 
 
@@ -32,7 +44,7 @@ body{
   font-family: "Pixelify Sans", sans-serif;
   font-size: 26px;
   margin-right: 45%;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .nav-bar {
     display: grid;
@@ -201,19 +213,20 @@ body{
   img{
     width: 100% !important;
     height: 30vh !important;
-    transform: translateX(0%) translateY(10%)!important;
+    transform: translateX() translateY(10%)!important;
+    margin-left: 30px;
   }
 
   .first-section{
     width: 100%;
-    height:120vh;
+    height:130vh;
 }
 
   .profile-text{
     font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
     width: 70%;
-    padding-top: 80%;
+    padding-top: 65%;
   }
 
   .div2 { 
