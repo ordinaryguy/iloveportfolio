@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     height: 0;
+    font-family: "Pixelify Sans", sans-serif;
     }
 
 body{
@@ -19,25 +20,26 @@ body{
 }
 
  .icon2{
-  background-color: lightpink;
-  border-radius: 10px;
-  width: 30px;
-  padding-right:10px;
-}
-.icon1{
-  background-color: lightpink;
-  border-radius: 10px;
-  width: 30px;
-  padding-right:5px;
-}
-.icon3
-{  background-color: lightpink;
+  background-color: palevioletred;
   border-radius: 10px;
   width: 30px;
   padding-right:7px;
+  padding-left: 5px;
 }
-
-
+.icon1{
+  background-color: palevioletred;
+  border-radius: 10px;
+  width: 30px;
+  padding-right:7px;
+  padding-left: 5px;
+}
+.icon3
+{  background-color: palevioletred;
+  border-radius: 10px;
+  width: 30px;
+  padding-right:7px;
+  padding-left: 5px;
+}
 
 .profile-text{
   padding-left:50px;
@@ -79,6 +81,12 @@ body{
     width: 100%;
     height:90vh;
 
+}
+
+.social-name{
+  background-color: pink;
+  border-radius: 10px;
+  color: black;
 }
 
 .second-section{
@@ -209,12 +217,64 @@ body{
      animation: animate 600ms ease-in-out;
   }
 
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  height: 150px;
+  aspect-ratio: 1;
+  position: relative;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transform-origin: bottom;
+}
+.loader::after {
+  background:
+    radial-gradient(at 75% 15%,#fffb,#0000 35%),
+    radial-gradient(at 80% 40%,#0000,#0008),
+    radial-gradient(circle  5px,#fff 94%,#0000),
+    radial-gradient(circle 10px,#000 94%,#0000),
+    linear-gradient(#F93318 0 0) top   /100% calc(50% - 5px),
+    linear-gradient(#fff    0 0) bottom/100% calc(50% - 5px)
+    #000;
+  background-repeat: no-repeat;
+  animation: l20 1s infinite cubic-bezier(0.5,120,0.5,-120);
+}
+.loader::before {
+  background:#ddd;
+  filter: blur(8px);
+  transform: scaleY(0.4) translate(-13px, 0px);
+}
+@keyframes l20 { 
+ 30%,70% {transform:rotate(0deg)}
+ 49.99%  {transform:rotate(0.2deg)}
+ 50%     {transform:rotate(-0.2deg)}
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it is on top */
+}
+
+
 @media (max-width: 480px) {
   img{
     width: 100% !important;
-    height: 30vh !important;
-    transform: translateX() translateY(10%)!important;
-    margin-left: 30px;
+    height: 25vh !important;
+    transform: translateX(0%) translateY(10%)!important;
   }
 
   .first-section{
@@ -275,3 +335,5 @@ ul .dropdown li {
   transform: translateX(15%);
 }
 }
+
+

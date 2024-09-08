@@ -35,28 +35,31 @@
 
         </div>
     </div>
+
+    
     <div class="first-section" id="first-section">
         <article class="profile-info"> 
+          
             <p class="profile-text">Welcome aboard! <br> I am Aries James Geriane. I live in the Philippines. I have a degree of BS Computer Science in Pamantasan ng Lungsod ng Maynila. 
               <br><br> I love exploring things, my focus now is building websites and doing pixel arts.
               <br><br> I have a background in Cyber Security, WordPress, Backend Development and teaching.
               <br><br> Connect with me:<br><br>
               <span class="social-icons"> 
-                <a href="https://www.facebook.com/Bboy.Countdown/" class="icon1"> <i class="fa-brands fa-facebook"> </i> </a><span>  &nbspAries James</span>
-                <br><br><a href="https://github.com/ordinaryguy" class="icon2"> <i class="fa-brands fa-github"></i></a><span>  &nbspilovecomputer</span>
-                <br><br><a href="https://www.linkedin.com/in/aries-james-geriane-a43448256/" class="icon3"> <i class="fa-brands fa-linkedin"></i> </a> <span>&nbsp Aries James Geriane</span>
+                <a href="https://www.facebook.com/Bboy.Countdown/" class="icon1 social-link" target="_blank"> <i class="fa-brands fa-facebook"> </i> <span class="social-name">  Aries James</span></a> 
+                <br><br><a href="https://github.com/ordinaryguy" class="icon2 social-link" target="_blank"> <i class="fa-brands fa-github"></i><span class="social-name">  ilovecomputer</span></a>
+                <br><br><a href="https://www.linkedin.com/in/aries-james-geriane-a43448256/" class="icon3 social-link"> <i class="fa-brands fa-linkedin" target="_blank"></i> <span class="social-name">Aries James Geriane</span></a> 
               </span>
             </p>
-            
           </article>
             <img class="img" src="../iloveportfolio/images/Profile.gif" alt="Profile">
-          
           </div>
+
 
 
   
     <div class="second-section" id="second-section">
         <h1 class="name2"> Achievement</h1>
+        
     </div>
     <div class="third-section" id="third-section">
         <h1 class="name3"> Art Work and Hobbies</h1>
@@ -64,14 +67,35 @@
     <div class="fourth-section" id="fourth-section">
         <h1 class="name4"> Project</h1>
     </div>
-
-
+    
+    <div class="loader-overlay" id="loader-overlay">
+      <div class="loader"></div>
+    </div>
 
 
 
 </body>
 
 <script>
+
+function showLoaderAndOpenTab(url) {
+        var loaderOverlay = document.getElementById('loader-overlay');
+        loaderOverlay.style.display = 'flex'; // Show loader overlay
+
+        setTimeout(function() {
+            window.open(url, '_blank'); // Open the URL in a new tab
+            loaderOverlay.style.display = 'none'; // Hide the loader
+        }, 1000); // Loader display duration
+    }
+
+    // Add click event listener to all social media links
+    document.querySelectorAll('.social-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            showLoaderAndOpenTab(link.href); // Show loader and open link in new tab
+        });
+    });
+
     var balls = document.getElementsByClassName("ball");
    document.onmousemove = function(){
      var x = event.clientX * 100 / window.innerWidth + "%";
