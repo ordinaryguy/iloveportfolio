@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <title>Profile</title>
 </head>
 <body>
@@ -45,9 +46,9 @@
               <br><br> I have a background in Cyber Security, WordPress, Backend Development and teaching.
               <br><br> Connect with me:<br><br>
               <span class="social-icons"> 
-                <a href="https://www.facebook.com/Bboy.Countdown/" class="icon1 social-link" target="_blank"> <i class="fa-brands fa-facebook"> </i> <span class="social-name">  Aries James</span></a> 
+                <a href="" class="icon1 social-link" target="_blank"> <i class="fa-brands fa-facebook"> </i> <span class="social-name">  Aries James</span></a> 
                 <br><br><a href="https://github.com/ordinaryguy" class="icon2 social-link" target="_blank"> <i class="fa-brands fa-github"></i><span class="social-name">  ilovecomputer</span></a>
-                <br><br><a href="https://www.linkedin.com/in/aries-james-geriane-a43448256/" class="icon3 social-link"> <i class="fa-brands fa-linkedin" target="_blank"></i> <span class="social-name">Aries James Geriane</span></a> 
+                <br><br><a href="" class="icon3 social-link"> <i class="fa-brands fa-linkedin" target="_blank"></i> <span class="social-name">Aries James Geriane</span></a> 
               </span>
             </p>
           </article>
@@ -56,10 +57,41 @@
 
 
 
-  
+          <h1 class="name2"> Achievements</h1>
     <div class="second-section" id="second-section">
-        <h1 class="name2"> Achievement</h1>
-        
+      
+        <div class="image-container">
+          <span style="--i: 1">
+              <img class="image" src="../iloveportfolio/images/AZ-900.png" title="image">
+          </span>
+          <span style="--i: 2">
+              <img class="image" src="../iloveportfolio/images/Publication-cert.png" title="image">
+          </span>
+          <span style="--i: 3">
+              <img class="image" src="../iloveportfolio/images/Completionword.png" title="image">
+          </span>
+          <span style="--i: 4">
+              <img class="image" src="../iloveportfolio/images/Introtocyber.png" title="image">
+          </span>
+          <span style="--i: 5">
+              <img class="image" src="../iloveportfolio/images/Networktech.png" title="image">
+          </span>
+          <span style="--i: 6">
+              <img class="image" src="../iloveportfolio/images/Completioncyber.jpg" title="image">
+          </span>
+          <span style="--i: 7">
+            <img class="image" src="../iloveportfolio/images/Megamind.gif" title="image">
+        </span>
+        <span style="--i: 8">
+          <img class="image" src="../iloveportfolio/images/Megamind.gif" title="image">
+      </span>
+      </div>
+  
+      <div class="btn-container">
+          <button class="btn" id="prev"><</button>
+          <button class="btn" id="next">></button>
+      </div>
+  
     </div>
     <div class="third-section" id="third-section">
         <h1 class="name3"> Art Work and Hobbies</h1>
@@ -72,10 +104,8 @@
       <div class="loader"></div>
     </div>
 
-
-
 </body>
-
+<script src="./script.js"></script>
 <script>
 
 function showLoaderAndOpenTab(url) {
@@ -107,6 +137,34 @@ function showLoaderAndOpenTab(url) {
        balls[i].style.top = y;
        balls[i].style.transform = "translate(-"+x+",-"+y+")";
      }}
+
+     const imageCon = document.querySelector(".image-container");
+
+const prevEl = document.getElementById("prev");
+const nextEl = document.getElementById("next");
+
+let x=0;
+let timer=0;
+
+prevEl.addEventListener("click",()=>{
+    x=x+45;
+    clearTimeout(timer);
+    updateImage();
+});
+nextEl.addEventListener("click",()=>{
+    x=x-45;
+    clearTimeout(timer);
+    updateImage();
+});
+
+function updateImage(){
+    imageCon.style.transform=`perspective(1000px) rotateY(${x}deg)`;
+    timer=setTimeout(()=>{
+        x=x-45;
+        updateImage();
+    },3000);
+}
+updateImage();
 </script>
 
 </html>
