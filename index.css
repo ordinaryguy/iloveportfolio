@@ -410,11 +410,14 @@ ul .dropdown li {
   width:100%;
   transform: translateY(60%);
 }
+
 .btn{
   position: absolute;
   background-color: orangered;
   color:white;
   padding: 20px 10px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   border-radius: 10px;
   border:none;
   cursor: pointer;
