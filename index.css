@@ -358,7 +358,7 @@ ul .dropdown li {
 }
 
 .image{
-  height: 150px !important;
+  height: 100px !important;
 }
 
 .image-container{
@@ -393,7 +393,7 @@ padding: 0 !important;
 
 .third-section
 {
-  height: 230vh;
+  height: 300vh;
 }
 }/* End of media 480 */
 
