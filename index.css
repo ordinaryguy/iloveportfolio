@@ -14,6 +14,7 @@ body{
 
 .welcome{
   font-family: "Pixelify Sans", sans-serif;
+  font-size: 48px;
 }
 
 .social-icons {
@@ -43,10 +44,11 @@ body{
   padding-left: 5px;
 }
 
+
 .profile-text{
   padding-left:50px;
   font-family: "Pixelify Sans", sans-serif;
-  font-size: 26px;
+  font-size: 32px;
   margin-right: 45%;
   padding-top: 5%;
 }
@@ -109,7 +111,7 @@ body{
 
 .third-section{
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     background-color: lightgoldenrodyellow ;
 }
 
@@ -391,7 +393,7 @@ padding: 0 !important;
 
 .third-section
 {
-  height: 250vh;
+  height: 230vh;
 }
 }/* End of media 480 */
 
@@ -448,6 +450,10 @@ padding: 0 !important;
 }
 #next{
   right:10%;
+}
+
+.image{
+  height: 300px !important;
 }
 
 
