@@ -8,9 +8,11 @@
 body{
 }
 .welcome{
+	margin-top: -75px;
 	font-family: "Pixelify Sans", sans-serif;
 	font-size: 48px;
 	color: #fff;
+	transform: rotate(-10deg) ;
 }
 .social-icons {
 	margin-bottom: 50px !important;
@@ -22,12 +24,18 @@ body{
 	padding-right:7px;
 	padding-left: 5px;
 }
+
+.a .icon1 .social-icons{
+	transform: rotate(-10deg) !important;
+}
+
 .icon1{
 	background-color: palevioletred;
 	border-radius: 10px;
 	width: 30px;
 	padding-right:7px;
 	padding-left: 5px;
+	
 }
 .icon3{
 	background-color: palevioletred;
@@ -74,7 +82,7 @@ body{
 .first-section{
 	padding-top: 100px;
 	width: 100%;
-	height:130vh;
+	height:110vh;
 	background-image: url(../iloveportfolio/images/Background.gif);
 	background-repeat: no-repeat;
 	background-size: 100% 100% !important;
@@ -107,9 +115,10 @@ body{
 	transform: translateY(-200px);
 }
 
+
 .third-section{
 	width: 100%;
-	height: 135vh;
+	height: 125vh;
 	background-color: #64daee ;
 	border-radius: 50px;
 }
@@ -299,7 +308,7 @@ ul:hover .dropdown li:nth-child(3) {
 }
 .btn{
 	position: absolute;
-	background-color: #64daee;
+	background-color: #3E8DFF;
 	color:white;
 	padding: 20px 10px;
 	padding-top: 20px;
@@ -334,7 +343,7 @@ ul:hover .dropdown li:nth-child(3) {
 	display: block;
 	width: 95%;
 	height: 300px;
-	border: 1px solid #000;
+	border: 2px solid #000;
 	cursor: pointer;
 	margin: 10px;
 	transition: 400ms;
@@ -343,6 +352,7 @@ ul:hover .dropdown li:nth-child(3) {
 	/* Added box-shadow */
 	transition-duration: 0.4s;
 	transition-timing-function: ease-out;
+	box-shadow: 4px 4px 0 #000;
 }
 .gallery img:hover {
 	transform: scale(1.13);
@@ -438,10 +448,12 @@ ul:hover .dropdown li:nth-child(3) {
 		display: none;
 	}
 	.welcome{
+		margin-top: 0px;
 		font-family: "Pixelify Sans", sans-serif;
 		font-size: 16px;
 		padding-top: 10px;
-		transform: translateX(15%);
+		padding-left: 20px;
+		transform: rotate(-10deg) ;
 	}
 	.image{
 		height: 200px !important;
