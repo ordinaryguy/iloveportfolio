@@ -435,7 +435,7 @@ ul:hover .dropdown li:nth-child(3) {
 		top:0;
 		width:100%;
 		border-radius: 5px;
-		object-fit: none !important;
+
 	}
 	.gallery {
 		display: flex !important;
