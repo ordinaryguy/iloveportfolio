@@ -11,6 +11,7 @@ body{
 .welcome{
 	font-family: "Pixelify Sans", sans-serif;
 	font-size: 48px;
+	color: #fff;
 }
 .social-icons {
 	margin-bottom: 50px !important;
@@ -42,6 +43,7 @@ body{
 	font-size: 32px;
 	margin-right: 45%;
 	padding-top: 5%;
+	color: beige;
 }
 .nav-bar {
 	display: grid;
@@ -50,7 +52,7 @@ body{
 	grid-column-gap: 0px;
 	height: 100px;
 	grid-row-gap: 0px;
-	background-color: lightblue;
+	background-color: black;
 	position:fixed;
 	width: 100%;
 	z-index: 1;
@@ -73,6 +75,9 @@ body{
 	padding-top: 100px;
 	width: 100%;
 	height:90vh;
+	background-image: url(../iloveportfolio/images/Background.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100% !important;
 }
 .social-name{
 	background-color: pink;
@@ -354,7 +359,7 @@ ul:hover .dropdown li:nth-child(3) {
 @media (max-width: 480px) {
 	img{
 		width: 100% !important;
-		height: 25vh !important;
+		height: 33vh !important;
 		transform: translateX(0%) translateY(10%)!important;
 	}
 	.first-section{
