@@ -444,6 +444,7 @@ ul:hover .dropdown li:nth-child(3) {
 		padding: 0 !important;
 		align-items: center;
 		text-align: center;
+    grid-gap: 205px;
 	}
 	.gallery img {
 		width: 100% !important;
