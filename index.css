@@ -6,7 +6,6 @@
 	font-family: "Pixelify Sans", sans-serif;
 }
 body{
-	background-color: palegoldenrod;
 }
 .welcome{
 	font-family: "Pixelify Sans", sans-serif;
@@ -56,6 +55,7 @@ body{
 	position:fixed;
 	width: 100%;
 	z-index: 1;
+	border-radius: 0px 0px 50px 50px;
 }
 .div1 {
 	grid-area: 1 / 1 / 2 / 2;
@@ -78,6 +78,7 @@ body{
 	background-image: url(../iloveportfolio/images/Background.gif);
 	background-repeat: no-repeat;
 	background-size: 100% 100% !important;
+	border-radius: 50px;
 }
 .social-name{
 	background-color: pink;
@@ -86,7 +87,7 @@ body{
 }
 .second-section{
 	width: 100%;
-	background-color: lightblue ;
+	background-color: #C6DDFF ;
 	margin:0;
 	display: flex;
 	flex-direction: column;
@@ -94,15 +95,23 @@ body{
 	align-items: center;
 	height:100vh;
 	overflow: hidden;
+	border-radius: 50px;
 }
 .name2{
 	display:flex;
 	justify-content: center;
+	font-size: 48px;
 }
+
+.forname{
+	transform: translateY(-200px);
+}
+
 .third-section{
 	width: 100%;
 	height: 135vh;
-	background-color: lightgoldenrodyellow ;
+	background-color: #64daee ;
+	border-radius: 50px;
 }
 .first-section img{
 	transform: translateX(170%) translateY(35%);
@@ -116,11 +125,13 @@ body{
 	padding-top: 100px;
 	display: flex;
 	justify-content: center;
+	font-size: 48px;
 }
 .fourth-section{
 	width: 100%;
 	height: 100vh;
 	background-color: lightpink ;
+	border-radius: 50px;
 }
 .name4{
 	padding-top: 200px;
@@ -169,10 +180,11 @@ nav li {
 	width: 150px;
 	font-size:16px;
 	line-height: 68px;
-	background: #5e17e9;
+	background: #69CF95;
 	text-transform: uppercase;
 	color: #ffffff;
 	cursor: pointer;
+	border-radius: 50px;
 }
 a{
 	color: #FFF;
@@ -180,12 +192,16 @@ a{
 }
 ul .dropdown li {
 	transform: translate(0%,-11%);
-	background: #5e17e9;
+	background: #69CF95;
 	color: #ffffff;
 	height: 70px;
 	width: 150px;
 	font-size: 16px;
 	display: none;
+	border: 2px solid #000;
+	box-shadow: 3px 3px 0 #000;
+
+	
 }
 ul:hover .dropdown li{
 	display: block;
@@ -283,7 +299,7 @@ ul:hover .dropdown li:nth-child(3) {
 }
 .btn{
 	position: absolute;
-	background-color: orangered;
+	background-color: #64daee;
 	color:white;
 	padding: 20px 10px;
 	padding-top: 20px;
@@ -364,7 +380,7 @@ ul:hover .dropdown li:nth-child(3) {
 	}
 	.first-section{
 		width: 100%;
-		height:130vh;
+		height:150vh;
 	}
 	.profile-text{
 		font-family: "Pixelify Sans", sans-serif;
@@ -383,6 +399,9 @@ ul:hover .dropdown li:nth-child(3) {
 		height:100vh;
 		overflow: hidden;
 	}
+	.forname{
+		transform: translateY(-130px);
+	}
 	.div2 {
 		grid-area: 1 / 2 / 2 / 3;
 		transform: translateX(-10%) translateY(-50%);
@@ -400,7 +419,7 @@ ul:hover .dropdown li:nth-child(3) {
 		width: 80px;
 		font-size:16px;
 		line-height: 50px;
-		background: #5e17e9;
+		background: #69CF95;
 		text-transform: uppercase;
 		color: #ffffff;
 		cursor: pointer;
@@ -411,7 +430,7 @@ ul:hover .dropdown li:nth-child(3) {
 	}
 	ul .dropdown li {
 		transform: translate(0%,-11%);
-		background: #5e17e9;
+		background: #69CF95;
 		color: #ffffff;
 		height: 50px;
 		width: 80px;
@@ -440,7 +459,6 @@ ul:hover .dropdown li:nth-child(3) {
 		top:0;
 		width:100%;
 		border-radius: 5px;
-
 	}
 	.gallery {
 		display: flex !important;
@@ -449,7 +467,7 @@ ul:hover .dropdown li:nth-child(3) {
 		padding: 0 !important;
 		align-items: center;
 		text-align: center;
-    grid-gap: 205px;
+    	grid-gap: 205px;
 	}
 	.gallery img {
 		width: 100% !important;
@@ -460,5 +478,20 @@ ul:hover .dropdown li:nth-child(3) {
 	.third-section{
 		height: 220vh !important;
 	}
+
+	.name2{
+		font-size: 24px;
+	}
+
+	.name3{
+		padding-top: 50px;
+		font-size: 24px;
+	}
+	.btn-container{
+		padding-top: 100px;
 }
 /* End of media 480 */
+}
+@media (max-width: 1600px) {
+
+}
