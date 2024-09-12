@@ -383,17 +383,20 @@ display: flex !important;
 height: 100px;
 flex-direction: column !important;
 padding: 0 !important;
-
+align-items: center;
+text-align: center;
 }
 
 .gallery img {
   width: 100% !important; 
-  height: 200px; 
+  height: 100px; 
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .third-section
 {
-  height: 450vh !important;
+  height: 320vh !important;
 }
   }/* End of media 480 */
 
