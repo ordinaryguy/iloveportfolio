@@ -320,6 +320,7 @@ nav ul {
   list-style: none;
   text-align: center;
 }
+
 nav li {
   transform: translate(110%, -5%);
   position: relative;
@@ -358,7 +359,7 @@ ul .dropdown li {
 }
 
 .image{
-  height: 100px !important;
+  height: 200px !important;
 }
 
 .image-container{
@@ -380,7 +381,6 @@ ul .dropdown li {
 .gallery {
 display: flex !important;
 height: 100px;
-
 flex-direction: column !important;
 padding: 0 !important;
 
@@ -393,9 +393,9 @@ padding: 0 !important;
 
 .third-section
 {
-  height: 300vh;
+  height: 350vh;
 }
-}/* End of media 480 */
+  }/* End of media 480 */
 
 
 
@@ -453,7 +453,7 @@ padding: 0 !important;
 }
 
 .image{
-  height: 300px !important;
+  height: 300px ;
 }
 
 
