@@ -185,6 +185,35 @@ function updateImage(){
     },3000);
 }
 updateImage();
+
+// Touch Events (for mobile)
+imageCon.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX;
+    imageCon.style.transition = 'none'; // Disable smooth transition while dragging
+    clearTimeout(timer); // Pause auto-sliding during touch
+});
+
+imageCon.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    currentX = e.touches[0].pageX;
+    const deltaX = currentX - startX;
+    x += deltaX * 0.2; // Adjust rotation based on touch drag
+    imageCon.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+    startX = currentX;
+});
+
+imageCon.addEventListener('touchend', () => {
+    isDragging = false;
+    imageCon.style.transition = 'transform 0.7s'; // Re-enable transition
+    startAutoSlide(); // Resume auto-sliding after touch release
+});
+
+// Update Image and Start Automatic Sliding
+function updateImage() {
+    imageCon.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+    startAutoSlide(); // Start the timer again
+}
 </script>
 
 </html>
