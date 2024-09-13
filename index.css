@@ -486,14 +486,19 @@ ul:hover .dropdown li:nth-child(3) {
 		text-align: center;
     	grid-gap: 205px;
 	}
+	
+	.div7{
+		padding-top: 20px;
+	}
+
 	.div8{
-		transform: translateX(-70px);
+		transform: translateX(-70px) translateY(23px);
 	}
 
 	.div9{
 		display: flex !important;
         flex-direction: column-reverse;
-        transform: translateX(100px) translateY(-8px);
+        transform: translateX(113px) translateY(42px);
 	}
 	.gallery img {
 		width: 100% !important;
