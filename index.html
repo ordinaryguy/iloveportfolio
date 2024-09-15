@@ -45,7 +45,7 @@
           
             <p class="profile-text">Welcome aboard!<br> I am <span  class="highlight">Aries James Geriane.</span> I live in the <span class="highlight">Philippines.</span> I have a degree of <span  class="highlight">BS Computer Science </span>in Pamantasan ng Lungsod ng Maynila. 
               <br><br> I love exploring things, my focus now is<span  class="highlight"> building websites, studying cyber security concepts and recent news. </span>In my leisure time I do pixel arts.
-              <br><br><span  class="highlight"> I have a background in Cyber Security, WordPress, Backend Development and teaching.</span>
+              <br><br><span  class="highlight"> I have a fundamental knowledge in Cyber Security, WordPress, Backend Development and teaching.</span>
               <br><br> Connect with me:<br><br>
               <span class="social-icons"> 
                 <a href="https://www.facebook.com/Bboy.Countdown/" class="icon1 social-link" target="_blank"> <i class="fa-brands fa-facebook"> </i> <span class="social-name">  Aries James</span></a> 
@@ -218,57 +218,55 @@ function updateImage(){
 }
 updateImage();
 
-// Touch Events (for mobile)
-// Touch Events (for mobile)
+
+// Touch Events for mobile
 imageCon.addEventListener('touchstart', (e) => {
     isDragging = true;
     startX = e.touches[0].pageX;
-    imageCon.style.transition = 'none'; // Disable smooth transition while dragging
-    clearTimeout(timer); // Pause auto-sliding during touch
+    imageCon.style.transition = 'none'; 
+    clearTimeout(timer); 
 });
 
 imageCon.addEventListener('touchmove', (e) => {
     if (!isDragging) return;
     currentX = e.touches[0].pageX;
     
-    e.preventDefault(); // Prevent default scrolling behavior
+    e.preventDefault(); 
 });
 
 imageCon.addEventListener('touchend', (e) => {
     if (!isDragging) return;
     isDragging = false;
-    imageCon.style.transition = 'transform 0.7s'; // Re-enable transition
+    imageCon.style.transition = 'transform 0.7s'; 
     
-    // Determine swipe direction and threshold
     const deltaX = currentX - startX;
 
     if (deltaX > swipeThreshold) {
-        // Swipe right (previous image)
+       
         x = x + 45;
     } else if (deltaX < -swipeThreshold) {
-        // Swipe left (next image)
+        
         x = x - 45;
     }
 
-    updateImage(); // Apply the transformation
-    startAutoSlide(); // Resume auto-sliding after swipe
+    updateImage(); 
+    startAutoSlide(); 
 });
 
-// Update Image and Start Automatic Sliding
+
 function updateImage() {
     imageCon.style.transform = `perspective(1000px) rotateY(${x}deg)`;
-    startAutoSlide(); // Start the timer again
+    startAutoSlide(); 
 }
 
-// Automatic Slide Function
 function startAutoSlide() {
     timer = setTimeout(() => {
-        x = x - 21; // Move to the next image automatically
+        x = x - 21; 
         updateImage();
     }, 9999999);
 }
 
-// Initialize the slider
+
 updateImage();
 
 //ball game
