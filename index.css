@@ -677,7 +677,7 @@ ul:hover .dropdown li:nth-child(3) {
 	}
 	.first-section{
 		width: 100%;
-		height:170vh;
+		height:250vh;
 	}
 	.welcome{
 		height: 10vh;
@@ -729,6 +729,23 @@ ul:hover .dropdown li:nth-child(3) {
 	.first-section{
 		width: 100%;
 		height:170vh;
+	}
+	.welcome{
+		height: 8vh;
+		width: 18%;
+		transform: translateY(-30px);
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 1600px) {
+	.first-section .img{
+		object-fit: fill !important;
+		height: 50vh;
+	}
+	.first-section{
+		width: 100%;
+		height:200vh;
 	}
 	.welcome{
 		height: 8vh;
