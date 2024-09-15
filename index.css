@@ -566,19 +566,10 @@ ul:hover .dropdown li:nth-child(3) {
     	grid-gap: 205px;
 	}
 	
-	.div7{
+	.div7,.div8,.div9{
 		padding-top: 20px;
 	}
 
-	.div8{
-		transform: translateX(-33%) translateY(1.5em);
-	}
-
-	.div9{
-		display: flex !important;
-        flex-direction: column-reverse;
-        transform: translateX(90%) translateY(2.5em) ;
-	}
 	.gallery img {
 		width: 100% !important;
 		height: 100px;
