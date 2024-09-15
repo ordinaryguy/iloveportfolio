@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Balls</title>
+    <link rel="stylesheet" href="balls.css">
+</head>
+<body>
+    <center>
+        <input id="start_stop_button" type="submit" name="button" value="start" onclick="toggle_animation();"/>
+        <input id="add_ball_button" type="submit" name="button" value="add ball" onclick="addBall(10, 150);"/> 
+    </center>
+    <div id="container">
+        <center><canvas id="myCanvas" width="900" height="700"></canvas></center>
+    </div>
+    
+</body>
+<script src="balls.js"></script>
+</html>
