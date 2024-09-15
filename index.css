@@ -155,6 +155,7 @@ body{
 	padding-top: 100px;
 	display: flex;
 	justify-content: center;
+	font-size: 48px;
 }
 /* eye */
 .eyes{
@@ -400,7 +401,7 @@ ul:hover .dropdown li:nth-child(3) {
 	align-items: center;
 	gap: 2rem;
 	text-align: center;
-	transform: translateY(-30%);
+	transform: translateY(-15%);
 }
 
 .box{
@@ -423,6 +424,7 @@ ul:hover .dropdown li:nth-child(3) {
 	align-items: center;
 	transition: 1s;
 	z-index: 1;
+	font-size: 36px;
 }
 
 .top i {
@@ -454,6 +456,7 @@ ul:hover .dropdown li:nth-child(3) {
 	justify-content: center;
 	align-items: center;
 	transition: 1s;
+	font-size: 36px;
 }
 
 .box:hover .bottom{
@@ -465,7 +468,7 @@ ul:hover .dropdown li:nth-child(3) {
 }
 
 @media (max-width: 480px) {
-	img{
+	.first-section .img{
 		width: 100% !important;
 		height: 33vh !important;
 		transform: translateX(0%) translateY(10%)!important;
@@ -563,25 +566,39 @@ ul:hover .dropdown li:nth-child(3) {
 		padding: 0 !important;
 		align-items: center;
 		text-align: center;
-    	grid-gap: 205px;
+    	grid-gap: 220%;
 	}
 	
 	.div7,.div8,.div9{
-		padding-top: 25%;
+		width: 100%;
+		height: 204px;
+	}
+
+	.div4 .image{
+		margin-right: 100px;
+		margin-left: 8px;
 	}
 
 	.gallery img {
 		width: 100% !important;
-		height: 100px;
-		padding: 0 !important;
-		margin: 0 !important;
+		height: 200px;
+
 	}
+	
 	.third-section{
-		height: 220vh !important;
+		height: 200vh !important;
 	}
 
 	.name2{
 		font-size: 24px;
+	}
+
+	.div8{
+		transform: translateY(-100%);
+	}
+
+	.div9{
+		transform: translateY(-200%);
 	}
 
 	.name3{
@@ -600,7 +617,7 @@ ul:hover .dropdown li:nth-child(3) {
 	align-items: center;
 	gap: 0.5rem;
 	text-align: center;
-	transform: translateY(-10%);
+	transform: translateY(-15%);
 }
 
 .bottom{
@@ -616,9 +633,34 @@ ul:hover .dropdown li:nth-child(3) {
 	justify-content: center;
 	align-items: center;
 	transition: 1s;
+	font-size: 18px !important; 
+}
+
+.top{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 12rem;
+	background: #19868a;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+	z-index: 1;
+	font-size: 18px !important;
+}
+.div2 {
+	grid-area: 1 / 2 / 2 / 3;
+	transform: translateX(-15%) translateY(-50%);
+}
+
+.div1 {
+	grid-area: 1 / 1 / 2 / 2;
+	transform: translateY(-20%);
+	padding-top: 40px;
 }
 /* End of media 480 */
 }
-@media (max-width: 1600px) {
 
-}

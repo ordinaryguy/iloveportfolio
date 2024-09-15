@@ -48,7 +48,7 @@
               <br><br><span  class="highlight"> I have a fundamental knowledge in Cyber Security, WordPress, Backend Development and teaching.</span>
               <br><br> Connect with me:<br><br>
               <span class="social-icons"> 
-                <a href="https://www.facebook.com/Bboy.Countdown/" class="icon1 social-link" target="_blank"> <i class="fa-brands fa-facebook"> </i> <span class="social-name">  Aries James</span></a> 
+                <a href="mailto:ariesgeriane@gmail.com" class="icon1 social-link" target="_blank"> <i class="fa-brands fa-google"> </i> <span class="social-name">  ariesgeriane</span></a> 
                 <br><br><a href="https://github.com/ordinaryguy" class="icon2 social-link" target="_blank"> <i class="fa-brands fa-github"></i><span class="social-name">  ilovecomputer</span></a>
                 <br><br><a href="https://www.linkedin.com/in/aries-james-geriane-a43448256/" class="icon3 social-link"> <i class="fa-brands fa-linkedin" target="_blank"></i> <span class="social-name">Aries James Geriane</span></a> 
               </span>
@@ -71,9 +71,7 @@
             </a>
             </span>
           <span style="--i: 2">
-            
               <img class="image" src="../iloveportfolio/images/Publication-cert.png" title="image">
-            
             </span>
           <span style="--i: 3">
               <img class="image" src="../iloveportfolio/images/Completionword.png" title="image">
@@ -92,7 +90,9 @@
               <img class="image" src="../iloveportfolio/images/Completioncyber.jpg" title="image">
           </span>
           <span style="--i: 7">
-            <img class="image" src="../iloveportfolio/images/Megamind.gif" title="image">
+            <a class="social-link" target="_blank" href="https://learn.opswatacademy.com/certificate/AuKJ4EABzw">
+            <img class="image" src="../iloveportfolio/images/cip.png" title="image">
+          </a>
         </span>
         <span style="--i: 8">
           <img class="image" src="../iloveportfolio/images/Megamind.gif" title="image">
@@ -118,12 +118,12 @@
 
     </div>
     <div class="fourth-section" id="fourth-section">
-        <h1 class="name4"> Project</h1>
+        <h1 class="name4"> Simple Project</h1>
         <div class="proj-container">
           <div class="box">
             <div class="top">Wanna see some bouncing balls?</div>
             <div class="bottom">
-            <a class="ballgame" href="ballgame.html">
+            <a class="ballgame" href="ballgame.html" target="_blank">
               Click me please!!
             </a>
           </div>
@@ -131,7 +131,7 @@
         <div class="box">
           <div class="top">How about a matching game!</div>
           <div class="bottom">
-          <a class="ballgame" href="ballgame.html">
+          <a class="ballgame" href="match.html" target="_blank">
             Click me please!!
           </a>
         </div>
@@ -141,7 +141,7 @@
           Let's try Roulette!
         </div>
         <div class="bottom">
-        <a class="ballgame" href="ballgame.html">
+        <a class="ballgame" href="casino.html" target="_blank">
           Click me please!!
         </a>
       </div>
@@ -167,7 +167,7 @@ function showLoaderAndOpenTab(url) {
         }, 1000);
     }
 
-    document.querySelectorAll('.social-link').forEach(link => {
+    document.querySelectorAll('.social-link, .ballgame').forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault(); 
             showLoaderAndOpenTab(link.href); 

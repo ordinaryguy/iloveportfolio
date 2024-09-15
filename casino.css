@@ -1,0 +1,36 @@
+#f1{
+   padding-top: 150px;
+   padding-left: 20px;
+}
+
+body{
+    background: url(https://www.casino.org/blog/wp-content/uploads/casinos_covid_restrictions.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+  }
+  .button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  
+}
+
+h1{
+  font-size: 60px;
+}
+
